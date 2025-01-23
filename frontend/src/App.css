@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flex Container for Header */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.profile-card h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.profile-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Decorative Dots */
+.profile-card::before,
+.profile-card::after {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border: 2px dashed #ff5722;
+  border-radius: 50%;
+}
+
+.profile-card::before {
+  top: -20px;
+  left: -20px;
+}
+
+.profile-card::after {
+  bottom: -20px;
+  right: -20px;
+}
+
+/* Title Section */
+.header-title {
+  text-align: center;
+  max-width: 600px;
+}
+
+.header-title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.header-title h1 span {
+  color: #777;
+}
+
+.header-title p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Statistics Section */
+.statistics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: #888;
+}
+
+
+.profile-card img {
+  width: 230px; /* Adjust size as needed */
+  height: 200px;
+  /* object-fit: contain; */
+  /* border-radius: 50%; Makes the image circular */
+  /* margin-bottom: 15px; */
+}
