@@ -9,10 +9,11 @@ function Header() {
     <ProfileCard />
     <div className="header-title">
       <h1>
-        MERN Stack <span>Developer</span>
+      <span className="mern-stack">MERN Stack</span>
+      <span className="developer">Developer</span>
       </h1>
       <p>
-        Passionate about creating intuitive and engaging user experiences.
+        Passionate about creating intuitive and engaging <br/> user experiences.
         Specializing in transforming ideas into beautifully crafted products.
       </p>
       <Statistics />

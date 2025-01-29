@@ -1,17 +1,17 @@
 .floating-navbar {
     position: fixed;
     top: 10px; /* Adjust the vertical position */
-    left: 50%;
+    left: 53%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3333333e;
+    background-color:rgba(51, 51, 51, 0.46);
     height: 35px; /* Adjust the height here */
     padding: 10px 30px; /* Adjust padding if necessary */
     border-radius: 50px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
-    z-index: 1000;
+    z-index: 1;
   }
   
   .floating-navbar a {

@@ -9,7 +9,6 @@ function App() {
 
   return (
     <>
-      
       <div className="header-container">
       <Header />
     </div>
