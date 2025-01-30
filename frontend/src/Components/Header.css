@@ -1,0 +1,30 @@
+.header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(50, 50, 50, 0.9);
+    padding: 8px 15px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+  }
+  .header {
+    padding-left: 20px; /* Adjust the value as needed */
+  }
+  .icon-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .icon-container svg {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .icon-container svg:hover {
+    color: orange;
+  }
+  

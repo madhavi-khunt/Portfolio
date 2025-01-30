@@ -1,25 +1,17 @@
-import React from 'react'
-import '../App.css'
-import ProfileCard from "../Pages/ProfileCard";
-import Statistics from "../Pages/Statistics";
+import { Home, Folder, ShoppingCart, Edit } from "lucide-react"; // Icons from Lucide
+import "./Header.css";
 
-function Header() {
+const Header = () => {
   return (
-    <div className="header-container">
-    <ProfileCard />
-    <div className="header-title">
-      <h1>
-      <span className="mern-stack">MERN Stack</span>
-      <span className="developer">Developer</span>
-      </h1>
-      <p>
-        Passionate about creating intuitive and engaging <br/> user experiences.
-        Specializing in transforming ideas into beautifully crafted products.
-      </p>
-      <Statistics />
-    </div>
-  </div>
-  )
-}
+    <header className="header">
+      <div className="icon-container">
+        <Home size={20} />
+        <Folder size={20} />
+        <ShoppingCart size={20} />
+        <Edit size={20} />
+      </div>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
